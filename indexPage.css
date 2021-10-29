@@ -1,0 +1,414 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body {
+        overflow-x: hidden;
+        background-color: black;
+        margin: 0px;
+        height: 100%;
+        display: grid;
+        font-family: 'Montserrat Alternates', Bold;
+    }
+    /* Arrow Button 
+	-----------------------------------*/
+    
+    .bawah-arrow {
+        margin-top: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 40px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    
+    .bawah-arrow:hover,
+    .bawah-arrow:focus {
+        text-decoration: none;
+    }
+    /* Arrow Bouncing */
+    
+    .bawah-arrow span {
+        display: inline-block;
+        font-size: 80px;
+        animation: .7s down infinite alternate;
+        -webkit-animation: .7s down infinite alternate;
+    }
+    /***anmacion Arrow down***/
+    
+    @keyframes down {
+        0% {
+            transform: translateY(0px)
+        }
+        100% {
+            transform: translateY(20px)
+        }
+    }
+    
+    @-webkit-keyframes down {
+        0% {
+            -webkit-transform: translateY(0px)
+        }
+        100% {
+            -webkit-transform: translateY(20px)
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .bawah-arrow {
+            display: none;
+        }
+    }
+    /* primera vista, informacion de la pagina hasta el boton */
+    
+    #video {
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+    /* Add some content at the bottom of the video/page */
+    
+    .content {
+        width: 40%;
+        height: 50%;
+        margin-left: 35%;
+        background-color: transparent;
+        position: absolute;
+        margin-top: 15%;
+        color: white;
+        flex-direction: column;
+    }
+    
+    .content h1 {
+        font-weight: 600;
+        font-size: 10em;
+        line-height: 80%;
+    }
+    /*BOTON DE REGISTRO O INICIO DE SESION*/
+    
+    .button {
+        font-family: 'Montserrat Alternates', medium;
+        font-weight: 500;
+        font-size: 2vh;
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        right: 20vw;
+        top: 155%;
+        border-radius: 100px;
+        text-align: center;
+        box-shadow: inset 0 0 0 white;
+        color: white;
+        background-color: transparent;
+        border: 3px solid white;
+        transition: all .5s ease;
+        outline: none;
+    }
+    
+    .button:hover {
+        color: #001F3F;
+        background-color: #fff;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .button {
+            width: 25vw;
+            height: 8vh;
+            margin-top: 40vh;
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+            padding-bottom: 15px;
+        }
+    }
+    /*SEGUNDA SECCION*/
+    
+    .secundario {
+        color: #fff;
+        width: 100%;
+        height: 100vh;
+        background-color: transparent;
+        display: flexbox;
+        justify-content: space-between;
+        background-image: url('imagenes/art.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .parallax {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .cuadroencabezado {
+        background-color: transparent;
+        width: 40%;
+        margin-left: 50%;
+        margin-top: 10%;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .cuadroencabezado {
+            margin-left: 3%;
+        }
+    }
+    
+    .encabezado {
+        padding: .3em;
+        color: black;
+        font-family: 'Montserrat Alternates', Bold;
+        font-weight: 700;
+        font-size: 5vw;
+        color: #ffffff;
+        text-align: right;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .encabezado {
+            font-size: 4em;
+        }
+    }
+    
+    .cuadro {
+        border-style: none;
+        background-color: transparent;
+        width: 30vw;
+        height: 35%;
+        margin-left: 5%;
+        margin-top: 3%;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .cuadro {
+            width: 90%;
+            top: 40vh;
+        }
+    }
+    
+    @media only screen and (max-width: 500px) {
+        .cuadro {
+            width: 90%;
+            top: 60%;
+            height: 70%;
+        }
+    }
+    
+    .txt {
+        padding: .1em;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 500;
+        font-size: 3.5vh;
+    }
+    /* tercera pagina vista, informacion de la que se puede hacer */
+    
+    .cuadroencabezado2 {
+        background-color: transparent;
+        width: 40%;
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .cuadroencabezado2 {
+            margin-left: 3%;
+        }
+    }
+    
+    .encabezado2 {
+        padding: .3em;
+        color: black;
+        font-family: 'Montserrat Alternates', Bold;
+        font-weight: 700;
+        font-size: 5vw;
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .encabezado2 {
+            font-size: 4em;
+        }
+    }
+    
+    .cuadro2 {
+        border-style: none;
+        background-color: transparent;
+        width: 30vw;
+        height: 35%;
+        margin-left: 60%;
+        margin-top: 3%;
+        text-align: center;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .cuadro2 {
+            width: 90%;
+            top: 40vh;
+        }
+    }
+    
+    @media only screen and (max-width: 500px) {
+        .cuadro2 {
+            width: 90%;
+            top: 60%;
+            height: 70%;
+        }
+    }
+    
+    .txt2 {
+        padding: .1em;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 500;
+        font-size: 3.5vh;
+    }
+    /* cuarta vista, y mas*/
+    
+    .tercero {
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        height: 120vh;
+        scroll-snap-align: start;
+        justify-content: space-between;
+    }
+    
+    div .para {
+        width: 100vw;
+        height: 100%;
+        background-image: url('imagenes/tercero.gif');
+        background-position: left;
+        background-size: cover;
+        background-attachment: fixed;
+        position: absolute;
+    }
+    
+    .cuarto {
+        width: 100%;
+        height: 85vh;
+        background-color: transparent;
+        display: grid;
+        place-items: center;
+    }
+    
+    *,
+    *:before,
+    *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .wraper {
+        font-family: 'Montserrat Alternates';
+        font-size: 3em;
+        text-align: center;
+        color: white;
+        width: 36%;
+        box-sizing: content-box;
+        background-color: transparent;
+        height: 70px;
+        margin-left: 10%;
+        padding: 20px 20px;
+        display: flex;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .wraper {
+            width: 50%;
+            font-size: 4vw;
+        }
+    }
+    
+    .words {
+        overflow: hidden;
+        color: white;
+        font-family: 'Montserrat Alternates';
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    .pala {
+        display: block;
+        height: 100%;
+        padding-left: 12px;
+        color: white;
+        animation: spin_words 6s infinite;
+    }
+    
+    @keyframes spin_words {
+        10% {
+            transform: translateY(-112%);
+        }
+        25% {
+            transform: translateY(-100%);
+        }
+        35% {
+            transform: translateY(-212%);
+        }
+        50% {
+            transform: translateY(-200%);
+        }
+        60% {
+            transform: translateY(-312%);
+        }
+        75% {
+            transform: translateY(-300%);
+        }
+        85% {
+            transform: translateY(-412%);
+        }
+        100% {
+            transform: translateY(-400%);
+        }
+    }
+    
+    .preloader {
+        position: fixed;
+        display: flex;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        z-index: 100000000000;
+    }
+    
+    .preloader::before {
+        position: absolute;
+        font-size: 10em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, .3);
+    }
+    
+    .hide {
+        opacity: 0;
+        transition: 1s;
+    }
+    
+    .preloader.active {
+        transform: translateY(-100vh);
+        transition: ease-in-out 2s;
+    }
+    
+    .counter {
+        position: relative;
+        font-size: 16em;
+        font-weight: 900;
+        color: white;
+        z-index: 1;
+    }
+    
+    .counter::after {
+        content: '%';
+        font-size: 0.5em
+    }

@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body{
+    overflow-x: hidden;
+    background-color: #23232f;
+}
+  h1 {
+      animation-duration: 3s;
+      animation-name: slidein;
+      font-family: 'Montserrat Alternates', Semi-bold;   
+      font-weight: 700;
+      text-shadow: 5px 5px 0 #ffb0b8, 10px 10px 0 #3c5c62, 15px 15px 0 #000000;
+    }
+
+  
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+  
+    a {
+      animation-duration: 3s;
+      animation-name: slidein;
+      font-family: 'Montserrat Alternates', Thin ;   
+     
+      
+    }
+    
+    @keyframes slidein {
+      from {
+        margin-right: 100%;
+        width: 300%
+      }
+    
+      to {
+        margin-right: 0%;
+        width: 100%;
+      }
+    }
+  
+
+
+
+
+    #div1 {
+      animation-duration: 3s;
+      animation-name: slidein;
+      background-color: transparent;
+      font-family: 'Montserrat Alternates', Thin ;  
+      
+      
+    }
+    
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+  
+  
+    button {
+      animation-duration: 3s;
+      animation-name: slidein;
+      background-color: #f92626;
+    }
+    
+    @keyframes slidein {
+      from {
+        margin-right: 100%;
+        width: 300%
+      }
+    
+      to {
+        margin-right: 0%;
+        width: 100%;
+      }
+    }
+  
+    .btn {
+      position: relative;
+      display: block;
+      height: 50px;
+      width: 300px;
+      border-radius: 4px;
+      
+      background-color: transparent;
+      color: black;
+      font-size: 18px;
+      overflow: hidden;
+      transition: all 500ms ease;
+      border: 2px transparent;
+      margin-bottom: 40px;
+      z-index: 0;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .btn::before {
+      content: "";
+      position: absolute;
+      
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: auto;
+      background-color: white;
+      transition: all 500ms ease;
+      z-index: -1;
+    }
+    .btn--1::before {
+      width: 0;
+      height: 100%;
+    }
+    .btn--1:hover {
+      color: #434343;
+    }
+    .btn--1:hover::before {
+      width: 100%;
+    }
+  
+  

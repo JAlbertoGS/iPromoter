@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="copia.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesión</title>
+
+    <link rel="stylesheet" href="Cssn/visiante.css">
+</head>
+
+<body>
+
+    <div class="fondo">
+
+    </div>
+
+    <button class="retrocede" onclick="location.href='home.html'"><img src="imagenes/flecha.png"  alt=""></button>
+
+
+    <div class="cuadro">
+        <h1>Registrate!</h1>
+        <p>Registrate para acceder a nuestro sitio</p>
+
+
+        <form action="registra_usuario.php" method="post">
+            <label for="name">Nombre</label>
+            <input type="text" name="nombre" required="required" style="color: white;">
+            <label for="apeP">Apellido paterno</label>
+            <input type="text" name="apellidop" required="required" style="color: white;">
+            <label for="apeP">Apellido materno</label>
+            <input type="text" name="apellidom" required="required" style="color: white;">
+            <label for="lemail">Correo electronico</label>
+            <input type="text" name="correo" placeholder="example@gmail.com" required="required" style="color: white;">
+            <label for="lpass">Contraseña</label>
+            <input type="password" name="contraseña" placeholder="password" required="required" style="color: white;">
+            <button type="submit">Entrar </button>
+        </form>
+
+    </div>
+</body>
+
+</html>

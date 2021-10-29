@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.cuadro {
+    width: 40%;
+    height: 80%;
+    background-color: transparent;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+.cuadro p {
+    padding-top: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+    .cuadro {
+        width: 100%;
+        height: auto;
+        left: 0%;
+    }
+}
+
+.formulario {
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    background-color: transparent;
+    position: absolute;
+    left: 55%;
+    top: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .formulario {
+        width: 100%;
+        height: auto;
+        top: 25%;
+        left: 0%;
+    }
+}
+
+h1 {
+    font-size: 7em;
+    font-family: 'Montserrat Alternates', Bold;
+    font-weight: 700;
+    text-shadow: .2vw .2vw 0 rgba(115, 116, 137, 1.5), .5vw .5vw 0 rgba(34, 35, 47, 1.5);
+    color: white;
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1080px) {
+    .cuadro {
+        font-size: .8em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+        text-align: left;
+    }
+}
+
+p {
+    font-size: 2em;
+    font-family: 'Montserrat Alternates', Bold;
+    font-weight: 700;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 1em;
+    }
+}
+
+form {
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    form {
+        width: 100%;
+        height: auto;
+    }
+}
+
+input {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+label {
+    font-size: 1em;
+    font-family: 'Montserrat Alternates', Bold;
+    font-weight: 700;
+    color: white;
+}
+
+button {
+    font-family: 'Montserrat Alternates', Bold;
+    font-weight: 700;
+    color: white;
+    border-radius: 20px;
+    border: solid;
+    border-color: white;
+    background-color: #737489;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px;
+}
+
+
+/*
+
+
+  <form enctype="multipart/form-data" action="editArt.php" method="POST" class="text-center" style="padding-left:9%;  ">
+
+    <div class="form-group">
+      <div class="col-md-10">
+        <label style="color: white;">Ingresa tu alias</label>
+        <input type="text" style="background: transparent; color:white; border-color:white" class="form-control" name="alias" placeholder="Tu alias" value="<?php echo $perfil['alias'] ?>">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-10">
+        <label style="color: white;">Ingresa tu informacion publica</label>
+        <textarea maxlength="350" class="form-control" style="background: transparent; color:white; border-color:white" name="informacion" placeholder="Ingresa aqui toda tu informacion que será publica en todo momento ('350 caracteres como maximo')" rows="10"> <?php echo $perfil['info'] ?>"</textarea>
+      </div>
+    </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-10">
+        <label style="color: white;">Escribe un link de una cancion tuya de youtube</label>
+        <input type="text" style="background: transparent; color:white;border-color:white" class="form-control" name="video" placeholder="Link de cancion de youtube" value="<?php echo $perfil['yt'] ?>">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-10">
+        <label style="color: white;">Escribe el link de tu Facebook</label>
+        <input type="text" style="background: transparent; color:white;border-color:white" class="form-control" name="face" placeholder="Link de tu Facebook" value="<?php echo $perfil['fb'] ?>">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-10">
+        <label style="color: white;">Escribe el link de tu Instagram</label>
+        <input type="text" style="background: transparent; color:white;border-color:white" class="form-control" name="insta" placeholder="Link de tu Instagram" value="<?php echo $perfil['ig'] ?>">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-10">
+        <label style="color: white;">Escribe el link de tu Soundcloud</label>
+        <input type="text" style="background: transparent; color:white;border-color:white" class="form-control" name="sound" placeholder="Link de tu Soundcloud" value="<?php echo $perfil['sc'] ?>">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-10">
+        <label style="color: white;">Escribe el enlace de tu cancion de spotify </label>
+        <input type="text" style="background: transparent; color:white;border-color:white" class="form-control" name="rolaUno" placeholder="Link de cancion de spotify"" value=" <?php echo $perfil['spotiUno'] ?>">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-10">
+        <label style="color: white;">Selecciona imagen tuya </label>
+        <input class="form-control" required="required" style="background: transparent; color:white;border-color:white" type="file" name="imagen" />
+      </div>
+    </div>
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary btn-lg btn-block login-btn" style=" font-family: 'Montserrat Alternates', Extra-light ;  color: white; border-color:#676eff; background-color:#72748e;">Guardar</button>
+
+    </div>
+
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

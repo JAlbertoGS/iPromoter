@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="copia.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesión</title>
+
+    <link rel="stylesheet" href="Cssn/sing-in.css">
+</head>
+
+<body>
+
+    <div class="fondo">
+
+    </div>
+    <button class="retrocede" onclick="location.href='home.html'"><img src="imagenes/flecha.png"  alt=""></button>
+
+    <div class="cuadro">
+        <h1>Bienvenido!</h1>
+        <p>Debes iniciar sesion para continuar y acceder a nuestro sitio</p>
+
+
+        <form action="iniciar_sesion.php" method="post">
+            <label for="fname">Correo electronico</label>
+            <input type="email" name="Correo" placeholder="example@gmail.com" required="required" style="color: white;">
+            <label for="lname">Contraseña</label>
+            <input type="password" name="Contraseña" placeholder="password" required="required" style="color: white;" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}" title="Debe contener entre 8 y 12 caracteres, de los cuales al menos 1 tiene que ser un numero, una letra MAYUS y una minus">
+            <button type="submit">Entrar </button>
+        </form>
+
+    </div>
+</body>
+
+</html>

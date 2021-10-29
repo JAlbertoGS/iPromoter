@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900i');
+body {
+    font-family: 'Montserrat';
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.centrado {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: red;
+    min-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 5px #000;
+}
+
+.item {
+    width: 80px;
+    height: 400px;
+    background: yellow;
+    flex: 1 1 auto;
+    transition: all .5s;
+    background-blend-mode: activecaption;
+}
+
+.item:nth-child(1) {
+    background: url(https://wallpaperaccess.com/full/113040.png) center /cover no-repeat, rgba(101, 102, 99, 0.774);
+}
+
+.item:nth-child(2) {
+    background: url(https://areajugones.sport.es/wp-content/uploads/2018/09/Fortnite-4-1-810x400.jpg) center /cover no-repeat, rgba(101, 102, 99, 0.774);
+}
+
+.item:hover {
+    flex-grow: 8;
+}

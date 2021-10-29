@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #B7C2CE;
+    color: black;
+}
+
+.cuadro {
+    width: 40%;
+    height: 80%;
+    background-color: transparent;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+.cuadro p {
+    padding-top: 10%;
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    .cuadro {
+        width: 100%;
+        height: auto;
+        left: 0%;
+    }
+}
+
+.formulario {
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    background-color: transparent;
+    position: absolute;
+    left: 55%;
+    top: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .formulario {
+        width: 100%;
+        height: auto;
+        top: 25%;
+        left: 0%;
+    }
+}
+
+h1 {
+    font-size: 7em;
+    font-family: 'Montserrat Alternates', Bold;
+    font-weight: 700;
+    text-shadow: .2vw .2vw 0 rgba(255, 255, 255, 1.5);
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+        text-align: left;
+    }
+}
+
+p {
+    font-size: 2em;
+    font-family: 'Montserrat Alternates', Bold;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 1em;
+    }
+}
+
+form {
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    form {
+        width: 100%;
+        height: auto;
+    }
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+label {
+    font-size: 2em;
+    font-family: 'Montserrat Alternates', Bold;
+    font-weight: 700;
+}
+
+button {
+    font-family: 'Montserrat Alternates', Bold;
+    font-weight: 700;
+    border-radius: 20px;
+    border: solid;
+    color: white;
+    border-color: white;
+    background-color: black;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px;
+}
